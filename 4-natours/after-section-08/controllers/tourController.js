@@ -10,7 +10,7 @@ exports.aliasTopTours = (req, res, next) => {
 
 exports.getAllTours = async (req, res) => {
   try {
-    // EXECUTE QUERY
+    // EXECUTE the QUERY to get the documents from db
     const features = new APIFeatures(Tour.find(), req.query)
       .filter()
       .sort()
